@@ -7,7 +7,7 @@ import { SharedModule } from './sharedcomponents/shared.module';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SharedModule.forRoot(),
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
